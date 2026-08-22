@@ -63,10 +63,11 @@ async function fetchSiblingGames(username) {
 
 async function main() {
   const config = JSON.parse(await fs.readFile("config.json", "utf8"));
-  const { owner, mode, friends = [] } = config;
+  const { owner, mode, friends = [], hiddenGameIds = [] } = config;
   const usernames = mode === "whitelist" ? [owner, ...friends] : [owner];
   const allowedSet = new Set(usernames.map((u) => u.toLowerCase()));
   const ownerLower = owner.toLowerCase();
+  const hiddenSet = new Set(hiddenGameIds.map((id) => id.toLowerCase()));
 
   const seen = new Map();
   for (const username of usernames) {
@@ -84,6 +85,7 @@ async function main() {
   }
 
   const games = [...seen.values()]
+    .filter((g) => !hiddenSet.has(g.uuid.toLowerCase()))
     .map((g) => ({
       id: g.uuid,
       url: g.url,
