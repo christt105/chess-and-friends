@@ -20,3 +20,11 @@ older games have no accuracy on record and are shown without one.
 for each configured username and keeps only games where both players are
 in the tracked group. No API key needed, no local engine analysis —
 chess.com's public API already returns per-game accuracy for free.
+
+Closed months (any month before the current one) are cached under
+`data/cache/{username}/{YYYY-MM}.json` and committed, so `fetch.js` only
+hits the network for the current month on repeat runs. Only games already
+relevant under `config.json`'s `mode`/`friends` are cached — if you widen
+that config (e.g. add a friend), delete `data/cache/` once to rebuild it
+with the new set, since older cached months won't retroactively include
+that friend's games.

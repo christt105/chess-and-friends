@@ -32,7 +32,16 @@ async function readCache(path) {
 
 const cacheStats = { hits: 0, fetches: 0 };
 
-async function fetchSiblingGames(username) {
+function isRelevant(g, allowedSet, mode, ownerLower) {
+  const white = g.white.username.toLowerCase();
+  const black = g.black.username.toLowerCase();
+  if (mode === "whitelist") return allowedSet.has(white) && allowedSet.has(black);
+  return white === ownerLower || black === ownerLower;
+}
+
+// Only relevant games (per `mode`/`friends`) are cached, never a player's
+// full history, so a friend's unrelated games never get committed to the repo.
+async function fetchSiblingGames(username, allowedSet, mode, ownerLower) {
   const { archives } = await getJson(
     `https://api.chess.com/pub/player/${username}/games/archives`
   );
@@ -49,7 +58,7 @@ async function fetchSiblingGames(username) {
       cacheStats.hits++;
     } else {
       const data = await getJson(url);
-      monthGames = data.games;
+      monthGames = data.games.filter((g) => isRelevant(g, allowedSet, mode, ownerLower));
       cacheStats.fetches++;
       if (isClosedMonth) {
         await fs.mkdir(`data/cache/${username}`, { recursive: true });
@@ -71,17 +80,8 @@ async function main() {
 
   const seen = new Map();
   for (const username of usernames) {
-    const games = await fetchSiblingGames(username);
-    for (const g of games) {
-      const white = g.white.username.toLowerCase();
-      const black = g.black.username.toLowerCase();
-      if (mode === "whitelist") {
-        if (!allowedSet.has(white) || !allowedSet.has(black)) continue;
-      } else {
-        if (white !== ownerLower && black !== ownerLower) continue;
-      }
-      seen.set(g.url, g);
-    }
+    const games = await fetchSiblingGames(username, allowedSet, mode, ownerLower);
+    for (const g of games) seen.set(g.url, g);
   }
 
   const games = [...seen.values()]
