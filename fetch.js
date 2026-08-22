@@ -2,8 +2,7 @@
 // Fetches chess.com games between the configured players and writes
 // data/games.json. Uses only the built-in fetch, no npm dependencies.
 
-const USERNAMES = ["christt105", "esponjaseca", "Frankl65"];
-const SIBLING_SET = new Set(USERNAMES.map((u) => u.toLowerCase()));
+const fs = await import("node:fs/promises");
 
 async function getJson(url) {
   const res = await fetch(url, {
@@ -31,13 +30,23 @@ async function fetchSiblingGames(username) {
 }
 
 async function main() {
+  const config = JSON.parse(await fs.readFile("config.json", "utf8"));
+  const { owner, mode, friends = [] } = config;
+  const usernames = mode === "whitelist" ? [owner, ...friends] : [owner];
+  const allowedSet = new Set(usernames.map((u) => u.toLowerCase()));
+  const ownerLower = owner.toLowerCase();
+
   const seen = new Map();
-  for (const username of USERNAMES) {
+  for (const username of usernames) {
     const games = await fetchSiblingGames(username);
     for (const g of games) {
       const white = g.white.username.toLowerCase();
       const black = g.black.username.toLowerCase();
-      if (!SIBLING_SET.has(white) || !SIBLING_SET.has(black)) continue;
+      if (mode === "whitelist") {
+        if (!allowedSet.has(white) || !allowedSet.has(black)) continue;
+      } else {
+        if (white !== ownerLower && black !== ownerLower) continue;
+      }
       seen.set(g.url, g);
     }
   }
@@ -57,7 +66,6 @@ async function main() {
     }))
     .sort((a, b) => a.date.localeCompare(b.date));
 
-  const fs = await import("node:fs/promises");
   await fs.writeFile("data/games.json", JSON.stringify(games, null, 2));
   console.log(`Wrote ${games.length} games to data/games.json`);
 }
