@@ -61,6 +61,8 @@ async function main() {
       whiteAccuracy: g.accuracies ? g.accuracies.white : null,
       blackAccuracy: g.accuracies ? g.accuracies.black : null,
       result: resultFromPgn(g.pgn),
+      whiteResult: g.white.result,
+      blackResult: g.black.result,
       timeClass: g.time_class,
       eco: g.eco ? g.eco.split("/").pop() : null,
     }))

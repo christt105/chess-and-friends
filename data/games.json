@@ -8,6 +8,8 @@
     "whiteAccuracy": null,
     "blackAccuracy": null,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "timeout",
     "timeClass": "blitz",
     "eco": "English-Opening-Symmetrical-Variation-2.Nc3"
   },
@@ -20,6 +22,8 @@
     "whiteAccuracy": 61.69,
     "blackAccuracy": 40.95,
     "result": "0-1",
+    "whiteResult": "timeout",
+    "blackResult": "win",
     "timeClass": "blitz",
     "eco": null
   },
@@ -32,6 +36,8 @@
     "whiteAccuracy": null,
     "blackAccuracy": null,
     "result": "1/2-1/2",
+    "whiteResult": "stalemate",
+    "blackResult": "stalemate",
     "timeClass": "blitz",
     "eco": null
   },
@@ -44,6 +50,8 @@
     "whiteAccuracy": null,
     "blackAccuracy": null,
     "result": "1/2-1/2",
+    "whiteResult": "insufficient",
+    "blackResult": "insufficient",
     "timeClass": "rapid",
     "eco": null
   },
@@ -56,6 +64,8 @@
     "whiteAccuracy": null,
     "blackAccuracy": null,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "timeout",
     "timeClass": "daily",
     "eco": "Undefined"
   },
@@ -68,6 +78,8 @@
     "whiteAccuracy": 91.84,
     "blackAccuracy": 82.18,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Caro-Kann-Defense-Exchange-Variation-3...cxd5-4.Nf3"
   },
@@ -80,6 +92,8 @@
     "whiteAccuracy": 96.65,
     "blackAccuracy": 93.56,
     "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
     "timeClass": "daily",
     "eco": null
   },
@@ -92,6 +106,8 @@
     "whiteAccuracy": 57.26,
     "blackAccuracy": 72.27,
     "result": "1/2-1/2",
+    "whiteResult": "agreed",
+    "blackResult": "agreed",
     "timeClass": "daily",
     "eco": "Ruy-Lopez-Opening-Cozio-Defense-4.d4-exd4-5.Nxd4"
   },
@@ -104,6 +120,8 @@
     "whiteAccuracy": 69.39,
     "blackAccuracy": 63.38,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Four-Knights-Game-Glek-Variation-4...d5-5.exd5-Nxd5"
   },
@@ -116,6 +134,8 @@
     "whiteAccuracy": 65.49,
     "blackAccuracy": 78.82,
     "result": "0-1",
+    "whiteResult": "checkmated",
+    "blackResult": "win",
     "timeClass": "daily",
     "eco": "Pirc-Defense-Modern-Defense-Geller-System-2...Nf6-3.Nc3-e5-4.Bc4"
   },
@@ -128,6 +148,8 @@
     "whiteAccuracy": 84.51,
     "blackAccuracy": 78.39,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Kings-Pawn-Opening-Leonardis-Variation-2...Nf6-3.Nf3"
   },
@@ -140,6 +162,8 @@
     "whiteAccuracy": 65.81,
     "blackAccuracy": 84.86,
     "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
     "timeClass": "daily",
     "eco": "Four-Knights-Game-Glek-Variation-4...d5"
   },
@@ -152,6 +176,8 @@
     "whiteAccuracy": 50.18,
     "blackAccuracy": 49.76,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Four-Knights-Game"
   },
@@ -164,6 +190,8 @@
     "whiteAccuracy": 58.68,
     "blackAccuracy": 64.86,
     "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
     "timeClass": "daily",
     "eco": "Three-Knights-Opening-3...Bb4"
   },
@@ -176,6 +204,8 @@
     "whiteAccuracy": 48.17,
     "blackAccuracy": 28.34,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Nimzowitsch-Defense-Kennedy-Linksspringer-Variation"
   },
@@ -188,6 +218,8 @@
     "whiteAccuracy": 85.11,
     "blackAccuracy": 70.11,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "rapid",
     "eco": "Four-Knights-Game-Glek-Variation-4...Bc5"
   },
@@ -200,6 +232,8 @@
     "whiteAccuracy": 78.44,
     "blackAccuracy": 90.53,
     "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
     "timeClass": "daily",
     "eco": "Four-Knights-Game"
   },
@@ -212,6 +246,8 @@
     "whiteAccuracy": 75.68,
     "blackAccuracy": 80.04,
     "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
     "timeClass": "daily",
     "eco": "Kings-Pawn-Opening-Kings-Knight-Variation"
   },
@@ -224,6 +260,8 @@
     "whiteAccuracy": 90.97,
     "blackAccuracy": 83.52,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "rapid",
     "eco": "Petrovs-Defense-3.d3-Nc6"
   },
@@ -236,6 +274,8 @@
     "whiteAccuracy": 87.65,
     "blackAccuracy": 76.38,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Nimzowitsch-Defense-Kennedy-Linksspringer-Variation"
   },
@@ -248,6 +288,8 @@
     "whiteAccuracy": 82.97,
     "blackAccuracy": 49.35,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "checkmated",
     "timeClass": "daily",
     "eco": "Kings-Pawn-Opening-Kings-Knight-Variation"
   },
@@ -260,6 +302,8 @@
     "whiteAccuracy": 75.75,
     "blackAccuracy": 60.18,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "checkmated",
     "timeClass": "daily",
     "eco": "Undefined"
   },
@@ -272,6 +316,8 @@
     "whiteAccuracy": 84.45,
     "blackAccuracy": 74.54,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Four-Knights-Game-Glek-Variation"
   },
@@ -284,6 +330,8 @@
     "whiteAccuracy": 85.11,
     "blackAccuracy": 79.26,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Scotch-Game-3...exd4-4.Nxd4-g6-5.Nc3"
   },
@@ -296,6 +344,8 @@
     "whiteAccuracy": 79.15,
     "blackAccuracy": 66.46,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "checkmated",
     "timeClass": "daily",
     "eco": "Vienna-Game-Falkbeer-Mieses-Variation-3...d5-4.exd5-Nxd5-5.Bg2"
   },
@@ -308,6 +358,8 @@
     "whiteAccuracy": 87.49,
     "blackAccuracy": 71.51,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Bishops-Opening"
   },
@@ -320,6 +372,8 @@
     "whiteAccuracy": 79.12,
     "blackAccuracy": 70.98,
     "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Nimzowitsch-Defense-Kennedy-Linksspringer-Variation"
   }
