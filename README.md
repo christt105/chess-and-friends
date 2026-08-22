@@ -1,4 +1,4 @@
-# chess-siblings
+# chess-and-friends
 
 Tracks precision and results for chess.com games played between christt105,
 esponjaseca and Frankl65, and shows their evolution over time.
@@ -18,5 +18,5 @@ older games have no accuracy on record and are shown without one.
 
 `fetch.js` reads `https://api.chess.com/pub/player/{username}/games/{YYYY}/{MM}`
 for each configured username and keeps only games where both players are
-siblings. No API key needed, no local engine analysis — chess.com's public
-API already returns per-game accuracy for free.
+in the tracked group. No API key needed, no local engine analysis —
+chess.com's public API already returns per-game accuracy for free.

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Fetches chess.com games between the configured siblings and writes
+// Fetches chess.com games between the configured players and writes
 // data/games.json. Uses only the built-in fetch, no npm dependencies.
 
 const USERNAMES = ["christt105", "esponjaseca", "Frankl65"];
@@ -7,7 +7,7 @@ const SIBLING_SET = new Set(USERNAMES.map((u) => u.toLowerCase()));
 
 async function getJson(url) {
   const res = await fetch(url, {
-    headers: { "User-Agent": "chess-siblings-tracker (personal use)" },
+    headers: { "User-Agent": "chess-and-friends-tracker (personal use)" },
   });
   if (!res.ok) throw new Error(`${url} -> ${res.status}`);
   return res.json();

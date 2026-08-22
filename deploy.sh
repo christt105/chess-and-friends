@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 # ---------------------------------------------------------------------------
-# Local LAN preview for the chess-siblings dashboard.
+# Local LAN preview for the chess-and-friends dashboard.
 #
 # Why a container? The Claude/dev container is network-isolated (private Docker
 # net); only the *host* Docker daemon can publish a port reachable from the LAN
@@ -18,12 +18,12 @@
 # ---------------------------------------------------------------------------
 set -eu
 
-NAME="chess-siblings"
+NAME="chess-and-friends"
 PORT="8099"
 HOST_IP="192.168.1.15"
 LABEL="managed-by=claude-preview"
 # Host path of this repo (/projects == /home/christian/Projects on the host).
-HOST_SRC="/home/christian/Projects/chess-siblings"
+HOST_SRC="/home/christian/Projects/chess-and-friends"
 
 url="http://$HOST_IP:$PORT"
 
