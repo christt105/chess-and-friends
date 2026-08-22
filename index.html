@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ajedrez entre hermanos</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3"></script>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body {
+    font-family: system-ui, sans-serif;
+    background: #14161a;
+    color: #e8e8e8;
+    margin: 0;
+    padding: 24px;
+  }
+  h1 { font-size: 1.4rem; margin: 0 0 20px; }
+  .card {
+    background: #1e2126;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .chart-wrap { position: relative; height: 260px; width: 100%; }
+  .stats-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .stat-card { flex: 1; min-width: 200px; }
+  .stat-card h2 { font-size: 1rem; margin: 0 0 8px; }
+  .stat-card table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .stat-card td { padding: 3px 0; }
+  .stat-card td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+  .table-scroll { overflow-x: auto; }
+  table.h2h { width: 100%; min-width: 420px; border-collapse: collapse; font-size: 0.9rem; }
+  table.h2h th, table.h2h td { padding: 6px 10px; text-align: center; border-bottom: 1px solid #333; white-space: nowrap; }
+  table.h2h th { color: #999; font-weight: normal; }
+  #status { color: #999; font-size: 0.85rem; }
+  .filters { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: #aaa; }
+  .filters input[type="date"] {
+    background: #14161a;
+    color: #e8e8e8;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 480px) {
+    body { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+<h1>Ajedrez entre hermanos</h1>
+<div id="status">Cargando data/games.json...</div>
+
+<div class="card filters">
+  <label>Desde <input type="date" id="fromDate" /></label>
+  <label>Hasta <input type="date" id="toDate" /></label>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Precisión a lo largo del tiempo</h2>
+  <div class="chart-wrap"><canvas id="accuracyChart"></canvas></div>
+</div>
+
+<div class="card stats-row" id="statCards"></div>
+
+<div class="card">
+  <h2 style="margin-top:0">Cara a cara</h2>
+  <div class="table-scroll"><table class="h2h" id="h2hTable"></table></div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
