@@ -24,6 +24,34 @@ function colorFor(username) {
   return colorMap[username.toLowerCase()] || "#aaaaaa";
 }
 
+const DRAW_REASONS = new Set([
+  "agreed", "stalemate", "repetition", "insufficient", "50move", "timevsinsufficient",
+]);
+const TIME_LOSS_REASONS = new Set(["timeout", "abandoned"]);
+
+const RESULT_ICONS = {
+  checkmate: { icon: "♚", title: "Jaque mate" },
+  resignation: { icon: "⚑", title: "Rendición" },
+  timeout: { icon: "⏱", title: "Tiempo / abandono" },
+  draw: { icon: "½", title: "Tablas" },
+  unknown: { icon: "♟", title: "Resultado desconocido" },
+};
+
+function resultCategory(game) {
+  const { whiteResult, blackResult } = game;
+  if (!whiteResult && !blackResult) return "unknown";
+  const loserResult = whiteResult === "win" ? blackResult : blackResult === "win" ? whiteResult : whiteResult;
+  if (loserResult === "checkmated") return "checkmate";
+  if (loserResult === "resigned") return "resignation";
+  if (TIME_LOSS_REASONS.has(loserResult)) return "timeout";
+  if (DRAW_REASONS.has(loserResult)) return "draw";
+  return "unknown";
+}
+
+function resultIconFor(game) {
+  return RESULT_ICONS[resultCategory(game)];
+}
+
 function outcomeFor(game, username) {
   const isWhite = game.white.toLowerCase() === username.toLowerCase();
   if (game.result === "1/2-1/2") return "draw";
@@ -108,6 +136,7 @@ async function main() {
       h2hCard.style.display = "";
       renderHeadToHead(games, allPlayers, owner);
     }
+    renderGamesLog(games);
   }
 
   for (const btn of document.querySelectorAll(".view-btn")) {
@@ -151,11 +180,11 @@ function renderAccuracyChart(games, players) {
       scales: {
         x: {
           type: "time",
-          ticks: { color: "#aaa", maxRotation: 45, autoSkipPadding: 12 },
+          ticks: { color: "#b3a082", maxRotation: 45, autoSkipPadding: 12 },
         },
-        y: { min: 0, max: 100, ticks: { color: "#aaa" } },
+        y: { min: 0, max: 100, ticks: { color: "#b3a082" } },
       },
-      plugins: { legend: { labels: { color: "#e8e8e8", boxWidth: 12 } } },
+      plugins: { legend: { labels: { color: "#f0e6d2", boxWidth: 12 } } },
     },
   });
 }
@@ -175,10 +204,11 @@ function renderStatCards(games, players) {
     }
     const avgAcc = accs.length ? (accs.reduce((a, b) => a + b, 0) / accs.length).toFixed(1) : "-";
 
+    const glyph = p.toLowerCase() === owner.toLowerCase() ? "♔" : "♙";
     const card = document.createElement("div");
     card.className = "stat-card";
     card.innerHTML = `
-      <h2 style="color:${colorFor(p)}">${p}</h2>
+      <h2 style="color:${colorFor(p)}">${glyph} ${p}</h2>
       <table>
         <tr><td>Victorias</td><td>${tally.win}</td></tr>
         <tr><td>Tablas</td><td>${tally.draw}</td></tr>
@@ -225,6 +255,27 @@ function renderHeadToHead(games, players, anchor) {
       )
       .join("")}
   `;
+}
+
+function renderGamesLog(games) {
+  const log = document.getElementById("gamesLog");
+  const sorted = [...games].sort((a, b) => b.date.localeCompare(a.date));
+  log.innerHTML = sorted
+    .map((g) => {
+      const { icon, title } = resultIconFor(g);
+      const date = new Date(g.date).toLocaleDateString("es-ES");
+      return `
+      <div class="game-row">
+        <span class="game-date">${date}</span>
+        <span class="game-players">
+          <span style="color:${colorFor(g.white)}">${g.white}</span>
+          vs
+          <span style="color:${colorFor(g.black)}">${g.black}</span>
+        </span>
+        <span class="game-result" title="${title}">${icon}</span>
+      </div>`;
+    })
+    .join("");
 }
 
 main();

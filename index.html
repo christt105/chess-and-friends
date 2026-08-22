@@ -3,23 +3,36 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Chess & Friends</title>
+<title>♞ Chess & Friends</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3"></script>
 <style>
-  :root { color-scheme: dark; }
+  :root {
+    color-scheme: dark;
+    --bg: #201510;
+    --card-bg: #2f2013;
+    --square-dark: #7b5335;
+    --border: #4a3420;
+    --text: #f0e6d2;
+    --text-muted: #b3a082;
+    --accent: #d9ae4e;
+  }
   * { box-sizing: border-box; }
   html, body { max-width: 100%; overflow-x: hidden; }
   body {
     font-family: system-ui, sans-serif;
-    background: #14161a;
-    color: #e8e8e8;
+    background:
+      repeating-conic-gradient(rgba(0, 0, 0, 0.12) 0% 25%, transparent 0% 50%) 0 0 / 48px 48px,
+      var(--bg);
+    color: var(--text);
     margin: 0;
     padding: 24px;
   }
-  h1 { font-size: 1.4rem; margin: 0 0 20px; }
+  h1 { font-size: 1.4rem; margin: 0 0 20px; color: var(--accent); letter-spacing: 0.02em; }
+  h2 { color: var(--text); }
   .card {
-    background: #1e2126;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 16px;
     margin-bottom: 20px;
@@ -34,15 +47,15 @@
   .stat-card td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
   .table-scroll { overflow-x: auto; }
   table.h2h { width: 100%; min-width: 420px; border-collapse: collapse; font-size: 0.9rem; }
-  table.h2h th, table.h2h td { padding: 6px 10px; text-align: center; border-bottom: 1px solid #333; white-space: nowrap; }
-  table.h2h th { color: #999; font-weight: normal; }
-  #status { color: #999; font-size: 0.85rem; }
+  table.h2h th, table.h2h td { padding: 6px 10px; text-align: center; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  table.h2h th { color: var(--text-muted); font-weight: normal; }
+  #status { color: var(--text-muted); font-size: 0.85rem; }
   .filters { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
-  .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: #aaa; }
+  .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: var(--text-muted); }
   .filters input[type="date"] {
-    background: #14161a;
-    color: #e8e8e8;
-    border: 1px solid #333;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
     border-radius: 6px;
     padding: 6px 8px;
     font-size: 0.9rem;
@@ -50,21 +63,36 @@
   .view-switch { display: flex; gap: 8px; padding: 8px; }
   .view-btn {
     background: transparent;
-    color: #aaa;
-    border: 1px solid #333;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
     border-radius: 6px;
     padding: 8px 16px;
     font-size: 0.9rem;
     cursor: pointer;
   }
-  .view-btn.active { background: #2a2e35; color: #e8e8e8; border-color: #555; }
+  .view-btn.active { background: var(--square-dark); color: var(--text); border-color: var(--accent); }
+  .log-scroll { max-height: 320px; overflow-y: auto; }
+  .game-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 4px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+  }
+  .game-row:last-child { border-bottom: none; }
+  .game-date { color: var(--text-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .game-players { flex: 1; text-align: center; }
+  .game-result { font-size: 1.1rem; width: 1.5em; text-align: center; }
   @media (max-width: 480px) {
     body { padding: 12px; }
+    .game-row { flex-wrap: wrap; }
   }
 </style>
 </head>
 <body>
-<h1>Chess & Friends</h1>
+<h1>♞ Chess & Friends ♞</h1>
 <div id="status">Cargando data/games.json...</div>
 
 <div class="card filters">
@@ -73,20 +101,25 @@
 </div>
 
 <div class="card view-switch">
-  <button type="button" class="view-btn active" data-view="individual">Individual</button>
-  <button type="button" class="view-btn" data-view="friends">Amigos</button>
+  <button type="button" class="view-btn active" data-view="individual">♔ Individual</button>
+  <button type="button" class="view-btn" data-view="friends">♟ Amigos</button>
 </div>
 
 <div class="card">
-  <h2 style="margin-top:0">Precisión a lo largo del tiempo</h2>
+  <h2 style="margin-top:0">♟ Precisión a lo largo del tiempo</h2>
   <div class="chart-wrap"><canvas id="accuracyChart"></canvas></div>
 </div>
 
 <div class="card stats-row" id="statCards"></div>
 
 <div class="card" id="h2hCard">
-  <h2 style="margin-top:0">Cara a cara</h2>
+  <h2 style="margin-top:0">♜ Cara a cara ♜</h2>
   <div class="table-scroll"><table class="h2h" id="h2hTable"></table></div>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">♞ Últimas partidas</h2>
+  <div class="log-scroll" id="gamesLog"></div>
 </div>
 
 <script src="dashboard.js"></script>
