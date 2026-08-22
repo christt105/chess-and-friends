@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.chess.com/game/live/61393861909",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2022.11.05\"]\n[Round \"-\"]\n[White \"Frankl65\"]\n[Black \"christt105\"]\n[Result \"1-0\"]\n[CurrentPosition \"5r2/1p5P/5P2/4b3/1k4p1/6P1/5PB1/3R1K2 b - -\"]\n[Timezone \"UTC\"]\n[ECO \"A34\"]\n[ECOUrl \"https://www.chess.com/openings/English-Opening-Symmetrical-Variation-2.Nc3\"]\n[UTCDate \"2022.11.05\"]\n[UTCTime \"13:29:05\"]\n[WhiteElo \"694\"]\n[BlackElo \"520\"]\n[TimeControl \"180\"]\n[Termination \"Frankl65 won on time\"]\n[StartTime \"13:29:05\"]\n[EndDate \"2022.11.05\"]\n[EndTime \"13:35:13\"]\n[Link \"https://www.chess.com/game/live/61393861909\"]\n\n1. c4 {[%clk 0:03:00]} 1... c5 {[%clk 0:03:00]} 2. Nc3 {[%clk 0:02:58.9]} 2... Qa5 {[%clk 0:02:56.2]} 3. g3 {[%clk 0:02:54.4]} 3... Nf6 {[%clk 0:02:53]} 4. Bg2 {[%clk 0:02:51.5]} 4... d6 {[%clk 0:02:49.4]} 5. e4 {[%clk 0:02:46.3]} 5... Be6 {[%clk 0:02:47.8]} 6. d3 {[%clk 0:02:39.5]} 6... Nc6 {[%clk 0:02:44.6]} 7. Ne2 {[%clk 0:02:36.9]} 7... Nb4 {[%clk 0:02:40.6]} 8. a3 {[%clk 0:02:30.2]} 8... Nc6 {[%clk 0:02:34]} 9. O-O {[%clk 0:02:28.6]} 9... Nd4 {[%clk 0:02:32.5]} 10. Nxd4 {[%clk 0:02:21.4]} 10... Bg4 {[%clk 0:02:30.5]} 11. Nde2 {[%clk 0:02:14]} 11... e5 {[%clk 0:02:19.3]} 12. h3 {[%clk 0:02:11.4]} 12... Bxe2 {[%clk 0:02:17.5]} 13. Qxe2 {[%clk 0:02:09.2]} 13... Qb6 {[%clk 0:02:11]} 14. Nd5 {[%clk 0:02:05.7]} 14... O-O-O {[%clk 0:02:02.4]} 15. Nxb6+ {[%clk 0:02:00.8]} 15... axb6 {[%clk 0:02:01]} 16. Bg5 {[%clk 0:01:55.5]} 16... h6 {[%clk 0:01:57.2]} 17. Bxf6 {[%clk 0:01:54.2]} 17... gxf6 {[%clk 0:01:55.7]} 18. Qf3 {[%clk 0:01:54.1]} 18... Rg8 {[%clk 0:01:52.9]} 19. Qxf6 {[%clk 0:01:51.4]} 19... Rg5 {[%clk 0:01:35.2]} 20. Qxg5 {[%clk 0:01:39.9]} 20... hxg5 {[%clk 0:01:33.6]} 21. b4 {[%clk 0:01:32.1]} 21... cxb4 {[%clk 0:01:30.5]} 22. axb4 {[%clk 0:01:31.3]} 22... Bh6 {[%clk 0:01:29.5]} 23. Ra7 {[%clk 0:01:28.3]} 23... Kb8 {[%clk 0:01:24.1]} 24. Rfa1 {[%clk 0:01:27]} 24... Kc7 {[%clk 0:01:20]} 25. Kf1 {[%clk 0:01:14.8]} 25... b5 {[%clk 0:01:11.6]} 26. cxb5 {[%clk 0:01:08.9]} 26... g4 {[%clk 0:01:01.7]} 27. h4 {[%clk 0:01:03.3]} 27... f5 {[%clk 0:00:57.2]} 28. exf5 {[%clk 0:01:01]} 28... e4 {[%clk 0:00:53.6]} 29. dxe4 {[%clk 0:00:54.3]} 29... Re8 {[%clk 0:00:48.7]} 30. Rc1+ {[%clk 0:00:43.7]} 30... Kb6 {[%clk 0:00:44.4]} 31. Ra3 {[%clk 0:00:38.1]} 31... Kxb5 {[%clk 0:00:42.9]} 32. Rd3 {[%clk 0:00:32.1]} 32... Bxc1 {[%clk 0:00:41.6]} 33. Rxd6 {[%clk 0:00:27.8]} 33... Kxb4 {[%clk 0:00:27.7]} 34. h5 {[%clk 0:00:26.7]} 34... Rc8 {[%clk 0:00:18.7]} 35. f6 {[%clk 0:00:22]} 35... Ba3 {[%clk 0:00:13.3]} 36. Rd1 {[%clk 0:00:16.7]} 36... Rf8 {[%clk 0:00:08]} 37. e5 {[%clk 0:00:15]} 37... Bb2 {[%clk 0:00:02.8]} 38. h6 {[%clk 0:00:12.6]} 38... Bxe5 {[%clk 0:00:00.5]} 39. h7 {[%clk 0:00:11.5]} 1-0\n",
+    "time_control": "180",
+    "end_time": 1667655313,
+    "rated": false,
+    "tcn": "kAYIbs7Gow!TfoZRmC6Slt5QgmQziqzQegQBmBSEBm0KpxEmdmGPsJ86JPWPcM3VMT2Tmv?!vT!MTMVMjzIzqz9VaW65fa5YgfPHAHMExF1LCLKCtC78acYPWqPHqtVctRHzFN86LTcqRd69CKqjNVjKV3",
+    "uuid": "cb47edb0-5d0d-11ed-843a-78ac4409ff3c",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "5r2/1p5P/5P2/4b3/1k4p1/6P1/5PB1/3R1K2 b - -",
+    "time_class": "blitz",
+    "rules": "chess",
+    "white": {
+      "rating": 694,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/frankl65",
+      "username": "Frankl65",
+      "uuid": "02332f48-54da-11eb-94ca-634e9cc82eb1"
+    },
+    "black": {
+      "rating": 520,
+      "result": "timeout",
+      "@id": "https://api.chess.com/pub/player/christt105",
+      "username": "christt105",
+      "uuid": "8ec92f12-9ff8-11ea-a6d0-4da5683c63b6"
+    },
+    "eco": "https://www.chess.com/openings/English-Opening-Symmetrical-Variation-2.Nc3"
+  }
+]

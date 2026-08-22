@@ -17,13 +17,45 @@ function resultFromPgn(pgn) {
   return m ? m[1] : "*";
 }
 
+function currentMonthKey() {
+  const now = new Date();
+  return `${now.getUTCFullYear()}-${String(now.getUTCMonth() + 1).padStart(2, "0")}`;
+}
+
+async function readCache(path) {
+  try {
+    return JSON.parse(await fs.readFile(path, "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+const cacheStats = { hits: 0, fetches: 0 };
+
 async function fetchSiblingGames(username) {
   const { archives } = await getJson(
     `https://api.chess.com/pub/player/${username}/games/archives`
   );
+  const nowKey = currentMonthKey();
   const games = [];
   for (const url of archives) {
-    const { games: monthGames } = await getJson(url);
+    const m = url.match(/\/(\d{4})\/(\d{2})$/);
+    const monthKey = m ? `${m[1]}-${m[2]}` : null;
+    const isClosedMonth = monthKey !== null && monthKey !== nowKey;
+    const cachePath = `data/cache/${username}/${monthKey}.json`;
+
+    let monthGames = isClosedMonth ? await readCache(cachePath) : null;
+    if (monthGames) {
+      cacheStats.hits++;
+    } else {
+      const data = await getJson(url);
+      monthGames = data.games;
+      cacheStats.fetches++;
+      if (isClosedMonth) {
+        await fs.mkdir(`data/cache/${username}`, { recursive: true });
+        await fs.writeFile(cachePath, JSON.stringify(monthGames, null, 2));
+      }
+    }
     games.push(...monthGames);
   }
   return games;
@@ -70,6 +102,7 @@ async function main() {
 
   await fs.writeFile("data/games.json", JSON.stringify(games, null, 2));
   console.log(`Wrote ${games.length} games to data/games.json`);
+  console.log(`Months from cache: ${cacheStats.hits}, fetched over network: ${cacheStats.fetches}`);
 }
 
 main().catch((err) => {

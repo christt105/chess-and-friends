@@ -1,0 +1,114 @@
+[
+  {
+    "url": "https://www.chess.com/game/live/9401090857",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.03.13\"]\n[Round \"-\"]\n[White \"morgthedon\"]\n[Black \"esponjaseca\"]\n[Result \"1-0\"]\n[CurrentPosition \"rnbqkbnr/pp1p1ppp/2p5/4N3/4P3/8/PPPP1PPP/RNBQKB1R b KQkq -\"]\n[Timezone \"UTC\"]\n[ECO \"C40\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Pawn-Opening-Kings-Knight-Variation\"]\n[UTCDate \"2021.03.13\"]\n[UTCTime \"18:59:38\"]\n[WhiteElo \"680\"]\n[BlackElo \"519\"]\n[TimeControl \"600\"]\n[Termination \"morgthedon won by resignation\"]\n[StartTime \"18:59:38\"]\n[EndDate \"2021.03.13\"]\n[EndTime \"19:00:09\"]\n[Link \"https://www.chess.com/game/live/9401090857\"]\n\n1. e4 {[%clk 0:09:59.9]} 1... e5 {[%clk 0:09:56.3]} 2. Nf3 {[%clk 0:09:57.7]} 2... c6 {[%clk 0:09:45.3]} 3. Nxe5 {[%clk 0:09:55]} 1-0\n",
+    "time_control": "600",
+    "end_time": 1615662009,
+    "rated": true,
+    "tcn": "mC0KgvYQvK",
+    "uuid": "4033ca76-842e-11eb-a7b4-536974010001",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "rnbqkbnr/pp1p1ppp/2p5/4N3/4P3/8/PPPP1PPP/RNBQKB1R b KQkq -",
+    "time_class": "rapid",
+    "rules": "chess",
+    "white": {
+      "rating": 680,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/morgthedon",
+      "username": "morgthedon",
+      "uuid": "ed649762-7e98-11eb-a448-a3a22fa4b2c9"
+    },
+    "black": {
+      "rating": 519,
+      "result": "resigned",
+      "@id": "https://api.chess.com/pub/player/esponjaseca",
+      "username": "esponjaseca",
+      "uuid": "aea20b0c-7427-11eb-b9c6-e7861797fcd9"
+    },
+    "eco": "https://www.chess.com/openings/Kings-Pawn-Opening-Kings-Knight-Variation"
+  },
+  {
+    "url": "https://www.chess.com/game/live/9401102955",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.03.13\"]\n[Round \"-\"]\n[White \"esponjaseca\"]\n[Black \"Gabor420\"]\n[Result \"0-1\"]\n[CurrentPosition \"rnbqk1nr/pppp1ppp/8/4p3/1b1PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -\"]\n[Timezone \"UTC\"]\n[ECO \"C21\"]\n[ECOUrl \"https://www.chess.com/openings/Center-Game\"]\n[UTCDate \"2021.03.13\"]\n[UTCTime \"19:00:17\"]\n[WhiteElo \"437\"]\n[BlackElo \"604\"]\n[TimeControl \"600\"]\n[Termination \"Gabor420 won by resignation\"]\n[StartTime \"19:00:17\"]\n[EndDate \"2021.03.13\"]\n[EndTime \"19:02:28\"]\n[Link \"https://www.chess.com/game/live/9401102955\"]\n\n1. d4 {[%clk 0:10:00]} 1... e5 {[%clk 0:09:36.9]} 2. e4 {[%clk 0:09:56.1]} 2... Bb4+ {[%clk 0:09:08.9]} 3. Nc3 {[%clk 0:09:46.9]} 0-1\n",
+    "time_control": "600",
+    "end_time": 1615662148,
+    "rated": true,
+    "tcn": "lB0KmC9zbs",
+    "uuid": "578e2f5d-842e-11eb-a7b4-536974010001",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "rnbqk1nr/pppp1ppp/8/4p3/1b1PP3/2N5/PPP2PPP/R1BQKBNR b KQkq -",
+    "time_class": "rapid",
+    "rules": "chess",
+    "white": {
+      "rating": 437,
+      "result": "resigned",
+      "@id": "https://api.chess.com/pub/player/esponjaseca",
+      "username": "esponjaseca",
+      "uuid": "aea20b0c-7427-11eb-b9c6-e7861797fcd9"
+    },
+    "black": {
+      "rating": 604,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/gabor420",
+      "username": "Gabor420",
+      "uuid": "9f6dab8a-8428-11eb-8a78-213e71fd4da7"
+    },
+    "eco": "https://www.chess.com/openings/Center-Game"
+  },
+  {
+    "url": "https://www.chess.com/game/live/9401146703",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.03.13\"]\n[Round \"-\"]\n[White \"maximumg4\"]\n[Black \"esponjaseca\"]\n[Result \"0-1\"]\n[CurrentPosition \"3q1rk1/Qpp2ppp/1bnpbn2/4p1B1/1P1PP2P/2N2N2/2P2PP1/4KB1R b KQ -\"]\n[Timezone \"UTC\"]\n[ECO \"C20\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Pawn-Opening-Leonardis-Variation-2...Nf6\"]\n[UTCDate \"2021.03.13\"]\n[UTCTime \"19:02:38\"]\n[WhiteElo \"472\"]\n[BlackElo \"525\"]\n[TimeControl \"600\"]\n[Termination \"esponjaseca won by resignation\"]\n[StartTime \"19:02:38\"]\n[EndDate \"2021.03.13\"]\n[EndTime \"19:08:01\"]\n[Link \"https://www.chess.com/game/live/9401146703\"]\n\n1. e4 {[%clk 0:09:59.5]} 1... e5 {[%clk 0:09:58.9]} 2. d3 {[%clk 0:09:57.6]} 2... Nf6 {[%clk 0:09:48.4]} 3. Nc3 {[%clk 0:09:55.5]} 3... Nc6 {[%clk 0:09:46.6]} 4. Bg5 {[%clk 0:09:43.6]} 4... Bb4 {[%clk 0:09:46.3]} 5. a3 {[%clk 0:09:39.1]} 5... Ba5 {[%clk 0:09:41.5]} 6. b4 {[%clk 0:09:37.1]} 6... Bb6 {[%clk 0:09:26.6]} 7. Nf3 {[%clk 0:09:20.3]} 7... O-O {[%clk 0:09:23.2]} 8. Nb5 {[%clk 0:08:46.7]} 8... a6 {[%clk 0:09:12]} 9. Nc3 {[%clk 0:08:38.2]} 9... d6 {[%clk 0:09:04.5]} 10. h4 {[%clk 0:08:19.7]} 10... a5 {[%clk 0:08:49.9]} 11. d4 {[%clk 0:07:39.6]} 11... axb4 {[%clk 0:08:34.5]} 12. axb4 {[%clk 0:07:16.3]} 12... Rxa1 {[%clk 0:08:33.4]} 13. Qxa1 {[%clk 0:07:14.3]} 13... Be6 {[%clk 0:08:23.9]} 14. Qa7 {[%clk 0:06:24.8]} 0-1\n",
+    "time_control": "600",
+    "end_time": 1615662481,
+    "rated": true,
+    "tcn": "mC0Klt!Tbs5QcM9ziqzGjzGPgv8!sHWOHsZRpFOGtBGzqz4ada6SaW",
+    "uuid": "ab02a035-842e-11eb-a7b4-536974010001",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "3q1rk1/Qpp2ppp/1bnpbn2/4p1B1/1P1PP2P/2N2N2/2P2PP1/4KB1R b KQ -",
+    "time_class": "rapid",
+    "rules": "chess",
+    "white": {
+      "rating": 472,
+      "result": "resigned",
+      "@id": "https://api.chess.com/pub/player/maximumg4",
+      "username": "maximumg4",
+      "uuid": "06e9afa0-c065-11e8-8036-000000000000"
+    },
+    "black": {
+      "rating": 525,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/esponjaseca",
+      "username": "esponjaseca",
+      "uuid": "aea20b0c-7427-11eb-b9c6-e7861797fcd9"
+    },
+    "eco": "https://www.chess.com/openings/Kings-Pawn-Opening-Leonardis-Variation-2...Nf6"
+  },
+  {
+    "url": "https://www.chess.com/game/live/9401667281",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.03.13\"]\n[Round \"-\"]\n[White \"esponjaseca\"]\n[Black \"Dewa_Zeus09\"]\n[Result \"0-1\"]\n[CurrentPosition \"3q1rk1/p2nbppp/b1p2n2/8/B2pN3/5P2/1rPBN1PP/R2QR2K w - -\"]\n[Timezone \"UTC\"]\n[ECO \"C10\"]\n[ECOUrl \"https://www.chess.com/openings/French-Defense-Rubinstein-Variation-4.Nxe4-Nf6\"]\n[UTCDate \"2021.03.13\"]\n[UTCTime \"19:08:35\"]\n[WhiteElo \"465\"]\n[BlackElo \"588\"]\n[TimeControl \"600\"]\n[Termination \"Dewa_Zeus09 won by resignation\"]\n[StartTime \"19:08:35\"]\n[EndDate \"2021.03.13\"]\n[EndTime \"19:18:48\"]\n[Link \"https://www.chess.com/game/live/9401667281\"]\n\n1. d4 {[%clk 0:09:59.9]} 1... e6 {[%clk 0:09:51.1]} 2. e4 {[%clk 0:09:57.9]} 2... d5 {[%clk 0:09:49.6]} 3. Nc3 {[%clk 0:09:53.7]} 3... dxe4 {[%clk 0:09:47.9]} 4. Nxe4 {[%clk 0:09:51.2]} 4... Nf6 {[%clk 0:09:33.8]} 5. f3 {[%clk 0:09:34.1]} 5... e5 {[%clk 0:09:30]} 6. Bb5+ {[%clk 0:09:28]} 6... c6 {[%clk 0:09:27.6]} 7. Ba4 {[%clk 0:09:21.3]} 7... b5 {[%clk 0:09:25.2]} 8. Bb3 {[%clk 0:09:17.3]} 8... exd4 {[%clk 0:09:22.6]} 9. Ne2 {[%clk 0:08:52.5]} 9... Nbd7 {[%clk 0:09:12.1]} 10. O-O {[%clk 0:08:48.4]} 10... Be7 {[%clk 0:09:09.2]} 11. Kh1 {[%clk 0:08:17.2]} 11... O-O {[%clk 0:09:04.7]} 12. a4 {[%clk 0:08:02.7]} 12... bxa4 {[%clk 0:07:09.1]} 13. Bxa4 {[%clk 0:07:54.9]} 13... Rb8 {[%clk 0:05:46.7]} 14. Bd2 {[%clk 0:07:40]} 14... Ba6 {[%clk 0:05:32.7]} 15. Re1 {[%clk 0:07:26.3]} 15... Rxb2 {[%clk 0:05:30.8]} 0-1\n",
+    "time_control": "600",
+    "end_time": 1615663128,
+    "rated": true,
+    "tcn": "lB0SmCZJbsJCsC!TnvSKfHYQHyXHyrKBgm5Zeg90gh8!iyHyry45cl6Ofe5j",
+    "uuid": "7a735476-842f-11eb-a7b4-536974010001",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "3q1rk1/p2nbppp/b1p2n2/8/B2pN3/5P2/1rPBN1PP/R2QR2K w - -",
+    "time_class": "rapid",
+    "rules": "chess",
+    "white": {
+      "rating": 465,
+      "result": "resigned",
+      "@id": "https://api.chess.com/pub/player/esponjaseca",
+      "username": "esponjaseca",
+      "uuid": "aea20b0c-7427-11eb-b9c6-e7861797fcd9"
+    },
+    "black": {
+      "rating": 588,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/dewa_zeus09",
+      "username": "Dewa_Zeus09",
+      "uuid": "c0ac5946-8427-11eb-9648-f1c2006ff9f3"
+    },
+    "eco": "https://www.chess.com/openings/French-Defense-Rubinstein-Variation-4.Nxe4-Nf6"
+  }
+]

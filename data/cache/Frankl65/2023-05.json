@@ -1,0 +1,95 @@
+[
+  {
+    "url": "https://www.chess.com/game/daily/512194531",
+    "pgn": "[Event \"Let's Play!\"]\n[Site \"Chess.com\"]\n[Date \"2023.05.03\"]\n[Round \"-\"]\n[White \"Frankl65\"]\n[Black \"esponjaseca\"]\n[Result \"1-0\"]\n[CurrentPosition \"rnbqkbnr/pppp1ppp/8/4p3/4P2P/8/PPPP1PP1/RNBQKBNR b KQkq e3 0 2\"]\n[Timezone \"UTC\"]\n[ECO \"A00\"]\n[ECOUrl \"https://www.chess.com/openings/Undefined\"]\n[UTCDate \"2023.05.03\"]\n[UTCTime \"20:45:26\"]\n[WhiteElo \"803\"]\n[BlackElo \"800\"]\n[TimeControl \"1/259200\"]\n[Termination \"Frankl65 won on time\"]\n[StartTime \"20:45:26\"]\n[EndDate \"2023.05.09\"]\n[EndTime \"16:42:37\"]\n[Link \"https://www.chess.com/game/daily/512194531\"]\n\n1. h4 {[%clk 0:16:59.8]} 1... e5 {[%clk 6:25:48.6]} 2. e4 {[%clk 0:04:46.5]} 1-0\n",
+    "time_control": "1/259200",
+    "end_time": 1683650557,
+    "rated": true,
+    "tcn": "pF0KmC",
+    "uuid": "6f2e07ac-e9f3-11ed-86cc-f819e401000b",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P2P/8/PPPP1PP1/RNBQKBNR b KQkq e3 0 2",
+    "start_time": 1683146726,
+    "time_class": "daily",
+    "rules": "chess",
+    "white": {
+      "rating": 803,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/frankl65",
+      "username": "Frankl65",
+      "uuid": "02332f48-54da-11eb-94ca-634e9cc82eb1"
+    },
+    "black": {
+      "rating": 800,
+      "result": "timeout",
+      "@id": "https://api.chess.com/pub/player/esponjaseca",
+      "username": "esponjaseca",
+      "uuid": "aea20b0c-7427-11eb-b9c6-e7861797fcd9"
+    },
+    "eco": "https://www.chess.com/openings/Undefined"
+  },
+  {
+    "url": "https://www.chess.com/game/live/77886064755",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2023.05.15\"]\n[Round \"-\"]\n[White \"Nikola172002\"]\n[Black \"Frankl65\"]\n[Result \"0-1\"]\n[CurrentPosition \"6k1/2b2ppp/8/p1p3B1/3p2qP/1B1P3K/P4r1n/1R6 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"B00\"]\n[ECOUrl \"https://www.chess.com/openings/Kings-Pawn-Opening\"]\n[UTCDate \"2023.05.15\"]\n[UTCTime \"10:35:51\"]\n[WhiteElo \"858\"]\n[BlackElo \"940\"]\n[TimeControl \"600\"]\n[Termination \"Frankl65 won by checkmate\"]\n[StartTime \"10:35:51\"]\n[EndDate \"2023.05.15\"]\n[EndTime \"10:45:37\"]\n[Link \"https://www.chess.com/game/live/77886064755\"]\n\n1. e4 {[%clk 0:10:00]} 1... a5 {[%clk 0:10:00]} 2. Nc3 {[%clk 0:09:56.2]} 2... c6 {[%clk 0:09:56.3]} 3. d3 {[%clk 0:09:43.6]} 3... d5 {[%clk 0:09:54.8]} 4. b3 {[%clk 0:09:36.9]} 4... d4 {[%clk 0:09:49.2]} 5. Nce2 {[%clk 0:09:29.9]} 5... e5 {[%clk 0:09:47.3]} 6. Bb2 {[%clk 0:09:23]} 6... Nf6 {[%clk 0:09:07.4]} 7. Nf3 {[%clk 0:09:18.8]} 7... Bd6 {[%clk 0:08:50.7]} 8. g3 {[%clk 0:08:55.7]} 8... O-O {[%clk 0:08:49]} 9. Bg2 {[%clk 0:08:53.9]} 9... c5 {[%clk 0:08:38.6]} 10. O-O {[%clk 0:08:51.3]} 10... Bg4 {[%clk 0:08:32.1]} 11. Qd2 {[%clk 0:08:25.9]} 11... Bxf3 {[%clk 0:08:28.6]} 12. Bxf3 {[%clk 0:08:24.6]} 12... Nc6 {[%clk 0:08:14.3]} 13. c3 {[%clk 0:08:15.3]} 13... Bc7 {[%clk 0:07:47]} 14. cxd4 {[%clk 0:08:00.8]} 14... exd4 {[%clk 0:07:40.7]} 15. e5 {[%clk 0:07:38.2]} 15... Nxe5 {[%clk 0:07:22.9]} 16. Bxb7 {[%clk 0:07:29.9]} 16... Rb8 {[%clk 0:07:10.3]} 17. Ba6 {[%clk 0:06:56.4]} 17... Nf3+ {[%clk 0:07:06.9]} 18. Kg2 {[%clk 0:06:46]} 18... Nxd2 {[%clk 0:07:05.4]} 19. Rfd1 {[%clk 0:06:40.3]} 19... Nxb3 {[%clk 0:06:58.8]} 20. Rab1 {[%clk 0:06:36.3]} 20... Rb6 {[%clk 0:06:44.3]} 21. Bc4 {[%clk 0:06:29]} 21... Re8 {[%clk 0:06:25.2]} 22. Bxb3 {[%clk 0:06:19.3]} 22... Rxe2 {[%clk 0:06:22.7]} 23. Bc1 {[%clk 0:06:07.3]} 23... Ng4 {[%clk 0:06:15.9]} 24. Rf1 {[%clk 0:05:51.3]} 24... Rf6 {[%clk 0:05:58.8]} 25. h4 {[%clk 0:05:30.7]} 25... Rfxf2+ {[%clk 0:05:52.7]} 26. Rxf2 {[%clk 0:05:20.9]} 26... Rxf2+ {[%clk 0:05:48.8]} 27. Kh3 {[%clk 0:05:19.7]} 27... Nh2 {[%clk 0:05:34.8]} 28. Bg5 {[%clk 0:05:10.3]} 28... Qd7+ {[%clk 0:05:31.2]} 29. g4 {[%clk 0:05:01.3]} 29... Qxg4# {[%clk 0:05:27.7]} 0-1\n",
+    "time_control": "600",
+    "end_time": 1684147537,
+    "rated": false,
+    "accuracies": {
+      "white": 72.2,
+      "black": 87.22
+    },
+    "tcn": "mCWGbsYQltZJjrJBsm0Kcj!Tgv9Row8!foQIeg6EdlEvov5QksRYsBKBCKQKvX45XOKvgovlfdlrab5POA98Ar8mjcTEdfPTpFTnfnmnoxEpcM7ZwEZE",
+    "uuid": "39f88a7d-f30c-11ed-99cf-6cfe544c0428",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "6k1/2b2ppp/8/p1p3B1/3p2qP/1B1P3K/P4r1n/1R6 w - -",
+    "time_class": "rapid",
+    "rules": "chess",
+    "white": {
+      "rating": 858,
+      "result": "checkmated",
+      "@id": "https://api.chess.com/pub/player/nikola172002",
+      "username": "Nikola172002",
+      "uuid": "2b4eab6c-e923-11ec-ade4-7959653fcb76"
+    },
+    "black": {
+      "rating": 940,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/frankl65",
+      "username": "Frankl65",
+      "uuid": "02332f48-54da-11eb-94ca-634e9cc82eb1"
+    },
+    "eco": "https://www.chess.com/openings/Kings-Pawn-Opening"
+  },
+  {
+    "url": "https://www.chess.com/game/live/78177085699",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2023.05.18\"]\n[Round \"-\"]\n[White \"Frankl65\"]\n[Black \"Blueflammes_001\"]\n[Result \"0-1\"]\n[CurrentPosition \"1r3rk1/pbpn1p1p/8/2b1PNp1/2Pp4/3B2BP/P4Pq1/RR4K1 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"C45\"]\n[ECOUrl \"https://www.chess.com/openings/Scotch-Game-Schmidt-Variation-5.Nxc6-bxc6-6.Bd3-d5-7.e5\"]\n[UTCDate \"2023.05.18\"]\n[UTCTime \"19:26:29\"]\n[WhiteElo \"789\"]\n[BlackElo \"781\"]\n[TimeControl \"180\"]\n[Termination \"Blueflammes_001 won by checkmate\"]\n[StartTime \"19:26:29\"]\n[EndDate \"2023.05.18\"]\n[EndTime \"19:29:04\"]\n[Link \"https://www.chess.com/game/live/78177085699\"]\n\n1. e4 {[%clk 0:03:00]} 1... e5 {[%clk 0:02:59.9]} 2. d4 {[%clk 0:02:59.1]} 2... Nc6 {[%clk 0:02:59.6]} 3. Nf3 {[%clk 0:02:59]} 3... exd4 {[%clk 0:02:58.5]} 4. Nxd4 {[%clk 0:02:57.1]} 4... Nf6 {[%clk 0:02:57.3]} 5. Nxc6 {[%clk 0:02:55.9]} 5... bxc6 {[%clk 0:02:53.7]} 6. Bd3 {[%clk 0:02:52.8]} 6... d5 {[%clk 0:02:50.5]} 7. e5 {[%clk 0:02:50.1]} 7... Nd7 {[%clk 0:02:48.2]} 8. Bf4 {[%clk 0:02:46.9]} 8... Be7 {[%clk 0:02:45.4]} 9. O-O {[%clk 0:02:45.3]} 9... O-O {[%clk 0:02:44.5]} 10. c4 {[%clk 0:02:44.1]} 10... d4 {[%clk 0:02:40.4]} 11. b4 {[%clk 0:02:40.4]} 11... Bxb4 {[%clk 0:02:38.2]} 12. Qa4 {[%clk 0:02:36.3]} 12... Bc5 {[%clk 0:02:32.7]} 13. Qxc6 {[%clk 0:02:31.3]} 13... Rb8 {[%clk 0:02:20]} 14. Nd2 {[%clk 0:02:22.6]} 14... Qh4 {[%clk 0:02:11.1]} 15. Bg3 {[%clk 0:02:10.9]} 15... Qg4 {[%clk 0:02:05.5]} 16. h3 {[%clk 0:02:04.3]} 16... Qg6 {[%clk 0:02:03.6]} 17. Nf3 {[%clk 0:01:54.3]} 17... Qxc6 {[%clk 0:02:00.7]} 18. Nh4 {[%clk 0:01:52.5]} 18... Bb7 {[%clk 0:01:58.5]} 19. Rfb1 {[%clk 0:01:49.3]} 19... g5 {[%clk 0:01:55.3]} 20. Nf5 {[%clk 0:01:44.8]} 20... Qxg2# {[%clk 0:01:50.6]} 0-1\n",
+    "time_control": "180",
+    "end_time": 1684438144,
+    "rated": true,
+    "accuracies": {
+      "white": 68.48,
+      "black": 77.39
+    },
+    "tcn": "mC0KlB5QgvKBvB!TBQXQftZJCKTZcD90eg8!kAJBjz0zdyzIyQ45bl7FDwFEpxEUlvUQvF6Xfb2MFLQo",
+    "uuid": "e0aaa65a-f5b1-11ed-9896-6cfe544c0428",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "1r3rk1/pbpn1p1p/8/2b1PNp1/2Pp4/3B2BP/P4Pq1/RR4K1 w - -",
+    "time_class": "blitz",
+    "rules": "chess",
+    "white": {
+      "rating": 789,
+      "result": "checkmated",
+      "@id": "https://api.chess.com/pub/player/frankl65",
+      "username": "Frankl65",
+      "uuid": "02332f48-54da-11eb-94ca-634e9cc82eb1"
+    },
+    "black": {
+      "rating": 781,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/blueflammes_001",
+      "username": "Blueflammes_001",
+      "uuid": "180767a2-5238-11eb-b3a2-1531b481a62e"
+    },
+    "eco": "https://www.chess.com/openings/Scotch-Game-Schmidt-Variation-5.Nxc6-bxc6-6.Bd3-d5-7.e5"
+  }
+]

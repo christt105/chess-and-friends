@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.chess.com/game/live/80752982755",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2023.06.17\"]\n[Round \"-\"]\n[White \"Frankl65\"]\n[Black \"joe_hank\"]\n[Result \"0-1\"]\n[CurrentPosition \"6k1/2p1p2p/2b2p2/4b3/3r4/p7/4K3/8 w - -\"]\n[Timezone \"UTC\"]\n[ECO \"A46\"]\n[ECOUrl \"https://www.chess.com/openings/Indian-Game-Knights-Variation\"]\n[UTCDate \"2023.06.17\"]\n[UTCTime \"15:00:02\"]\n[WhiteElo \"603\"]\n[BlackElo \"775\"]\n[TimeControl \"60\"]\n[Termination \"joe_hank won on time\"]\n[StartTime \"15:00:02\"]\n[EndDate \"2023.06.17\"]\n[EndTime \"15:02:11\"]\n[Link \"https://www.chess.com/game/live/80752982755\"]\n\n1. d4 {[%clk 0:01:00]} 1... Nf6 {[%clk 0:00:59.9]} 2. Nf3 {[%clk 0:00:59.6]} 2... g5 {[%clk 0:00:59.8]} 3. e4 {[%clk 0:00:58.5]} 3... Bg7 {[%clk 0:00:59.2]} 4. e5 {[%clk 0:00:57.2]} 4... Nd5 {[%clk 0:00:58.2]} 5. c4 {[%clk 0:00:55.1]} 5... d6 {[%clk 0:00:58]} 6. cxd5 {[%clk 0:00:54.3]} 6... dxe5 {[%clk 0:00:57.3]} 7. Bxg5 {[%clk 0:00:53.4]} 7... Qxd5 {[%clk 0:00:55.5]} 8. dxe5 {[%clk 0:00:51.8]} 8... Qxd1+ {[%clk 0:00:52.7]} 9. Kxd1 {[%clk 0:00:51.7]} 9... Be6 {[%clk 0:00:50.2]} 10. Nc3 {[%clk 0:00:50]} 10... O-O {[%clk 0:00:49.4]} 11. Be2 {[%clk 0:00:45.1]} 11... Nc6 {[%clk 0:00:48.4]} 12. Re1 {[%clk 0:00:43.9]} 12... Rad8+ {[%clk 0:00:47.5]} 13. Kc2 {[%clk 0:00:42.2]} 13... a6 {[%clk 0:00:46.2]} 14. Rad1 {[%clk 0:00:40.9]} 14... Nb4+ {[%clk 0:00:43.9]} 15. Kb1 {[%clk 0:00:36.5]} 15... Bxa2+ {[%clk 0:00:42]} 16. Ka1 {[%clk 0:00:34.1]} 16... Be6 {[%clk 0:00:40.5]} 17. Ne4 {[%clk 0:00:29.4]} 17... Nc2+ {[%clk 0:00:39]} 18. Kb1 {[%clk 0:00:26]} 18... Nxe1 {[%clk 0:00:37.4]} 19. Nxe1 {[%clk 0:00:24.8]} 19... Rxd1+ {[%clk 0:00:34.6]} 20. Bxd1 {[%clk 0:00:23.4]} 20... Bxe5 {[%clk 0:00:33.6]} 21. h3 {[%clk 0:00:20.6]} 21... Rd8 {[%clk 0:00:32.1]} 22. g4 {[%clk 0:00:19.8]} 22... Rxd1+ {[%clk 0:00:30.9]} 23. Kc2 {[%clk 0:00:17.9]} 23... Rxe1 {[%clk 0:00:29.1]} 24. f3 {[%clk 0:00:15.1]} 24... f6 {[%clk 0:00:25.3]} 25. Bh4 {[%clk 0:00:13.1]} 25... Re3 {[%clk 0:00:22.9]} 26. Nc5 {[%clk 0:00:11]} 26... Bc8 {[%clk 0:00:18]} 27. Nxb7 {[%clk 0:00:09.5]} 27... Bxb7 {[%clk 0:00:16.8]} 28. Kd2 {[%clk 0:00:09.3]} 28... Rxf3 {[%clk 0:00:16]} 29. Ke2 {[%clk 0:00:08]} 29... Rxh3 {[%clk 0:00:15.1]} 30. Kf2 {[%clk 0:00:07]} 30... Rxh4 {[%clk 0:00:14.2]} 31. Kg1 {[%clk 0:00:05]} 31... Rxg4+ {[%clk 0:00:13.4]} 32. Kf1 {[%clk 0:00:04.1]} 32... Bxb2 {[%clk 0:00:13.2]} 33. Ke2 {[%clk 0:00:03.5]} 33... Be5 {[%clk 0:00:12.3]} 34. Kd3 {[%clk 0:00:03.1]} 34... Bc6 {[%clk 0:00:11.5]} 35. Ke3 {[%clk 0:00:03]} 35... Rd4 {[%clk 0:00:10.4]} 36. Ke2 {[%clk 0:00:01.4]} 36... a5 {[%clk 0:00:10.3]} 37. Ke3 {[%clk 0:00:00.6]} 37... a4 {[%clk 0:00:10.2]} 38. Ke2 {[%clk 0:00:00.3]} 38... a3 {[%clk 0:00:10.1]} 0-1\n",
+    "time_control": "60",
+    "end_time": 1687014131,
+    "rated": true,
+    "tcn": "lB!Tgv2MmC92CKTJkAZRAJRKcM7JBKJded6Sbs8!fm5Qhe47dkWOadQzkbSibaiSsCzkabkeve7dmd2Kpx97oE7dbkdenv1TMFeuCIS6IX6XkluvlmvxmnxFngFEgfKjfmjKmtXQtuEBumOGmuGyumyq",
+    "uuid": "9ff11cc1-0d1f-11ee-9f85-6cfe544c0428",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "6k1/2p1p2p/2b2p2/4b3/3r4/p7/4K3/8 w - -",
+    "time_class": "bullet",
+    "rules": "chess",
+    "white": {
+      "rating": 603,
+      "result": "timeout",
+      "@id": "https://api.chess.com/pub/player/frankl65",
+      "username": "Frankl65",
+      "uuid": "02332f48-54da-11eb-94ca-634e9cc82eb1"
+    },
+    "black": {
+      "rating": 775,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/joe_hank",
+      "username": "joe_hank",
+      "uuid": "5afe4990-0483-11e9-8000-000000000000"
+    },
+    "eco": "https://www.chess.com/openings/Indian-Game-Knights-Variation"
+  }
+]

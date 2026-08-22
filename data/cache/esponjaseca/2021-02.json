@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.chess.com/game/live/7638753511",
+    "pgn": "[Event \"Live Chess\"]\n[Site \"Chess.com\"]\n[Date \"2021.02.21\"]\n[Round \"-\"]\n[White \"esponjaseca\"]\n[Black \"newb55\"]\n[Result \"0-1\"]\n[CurrentPosition \"rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -\"]\n[Timezone \"UTC\"]\n[ECO \"D02\"]\n[ECOUrl \"https://www.chess.com/openings/Queens-Pawn-Opening-Symmetrical-Variation\"]\n[UTCDate \"2021.02.21\"]\n[UTCTime \"09:32:22\"]\n[WhiteElo \"629\"]\n[BlackElo \"817\"]\n[TimeControl \"600\"]\n[Termination \"newb55 won by resignation\"]\n[StartTime \"09:32:22\"]\n[EndDate \"2021.02.21\"]\n[EndTime \"09:32:52\"]\n[Link \"https://www.chess.com/game/live/7638753511\"]\n\n1. d4 {[%clk 0:09:56.2]} 1... d5 {[%clk 0:09:58.5]} 2. Nf3 {[%clk 0:09:49]} 2... Nf6 {[%clk 0:09:54.6]} 0-1\n",
+    "time_control": "600",
+    "end_time": 1613899972,
+    "rated": true,
+    "tcn": "lBZJgv!T",
+    "uuid": "b144e1c6-7427-11eb-b78b-0069e4010001",
+    "initial_setup": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq -",
+    "time_class": "rapid",
+    "rules": "chess",
+    "white": {
+      "rating": 629,
+      "result": "resigned",
+      "@id": "https://api.chess.com/pub/player/esponjaseca",
+      "username": "esponjaseca",
+      "uuid": "aea20b0c-7427-11eb-b9c6-e7861797fcd9"
+    },
+    "black": {
+      "rating": 817,
+      "result": "win",
+      "@id": "https://api.chess.com/pub/player/newb55",
+      "username": "newb55",
+      "uuid": "79066950-1cea-11eb-9b0e-0bc6df4ab20b"
+    },
+    "eco": "https://www.chess.com/openings/Queens-Pawn-Opening-Symmetrical-Variation"
+  }
+]
