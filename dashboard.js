@@ -1,11 +1,27 @@
-const COLORS = {
-  christt105: "#5dade2",
-  esponjaseca: "#58d68d",
-  frankl65: "#e67e22",
-};
+const OWNER_COLOR = "#d9ae4e";
+const PALETTE = [
+  "#5dade2", "#58d68d", "#e67e22", "#af7ac5", "#ec7063",
+  "#48c9b0", "#f5b041", "#5499c7", "#82e0aa", "#d2b4de",
+];
+
+let colorMap = {};
+
+function buildColorMap(owner, players) {
+  const map = {};
+  let i = 0;
+  for (const p of players) {
+    if (p.toLowerCase() === owner.toLowerCase()) {
+      map[p.toLowerCase()] = OWNER_COLOR;
+    } else {
+      map[p.toLowerCase()] = PALETTE[i % PALETTE.length];
+      i++;
+    }
+  }
+  return map;
+}
 
 function colorFor(username) {
-  return COLORS[username.toLowerCase()] || "#aaaaaa";
+  return colorMap[username.toLowerCase()] || "#aaaaaa";
 }
 
 function outcomeFor(game, username) {
@@ -40,6 +56,9 @@ function filterByDate(games, from, to) {
 }
 
 let chart = null;
+let currentView = "individual";
+let owner = null;
+let allPlayers = [];
 
 async function main() {
   const status = document.getElementById("status");
@@ -51,7 +70,18 @@ async function main() {
     return;
   }
 
-  const players = playersIn(allGames);
+  let config = {};
+  try {
+    config = await (await fetch("config.json")).json();
+  } catch (err) {
+    console.warn("No se pudo cargar config.json:", err);
+  }
+
+  allPlayers = playersIn(allGames);
+  owner =
+    (config.owner && allPlayers.find((p) => p.toLowerCase() === config.owner.toLowerCase())) ||
+    allPlayers[0];
+  colorMap = buildColorMap(owner, allPlayers);
 
   const fromInput = document.getElementById("fromDate");
   const toInput = document.getElementById("toDate");
@@ -66,9 +96,26 @@ async function main() {
     const to = new Date(toInput.value);
     const games = filterByDate(allGames, from, to);
     status.textContent = `${games.length} de ${allGames.length} partidas en el rango seleccionado.`;
-    renderAccuracyChart(games, players);
-    renderStatCards(games, players);
-    renderHeadToHead(games, players);
+
+    const h2hCard = document.getElementById("h2hCard");
+    if (currentView === "individual") {
+      renderAccuracyChart(games, [owner]);
+      renderStatCards(games, [owner]);
+      h2hCard.style.display = "none";
+    } else {
+      renderAccuracyChart(games, allPlayers);
+      renderStatCards(games, allPlayers);
+      h2hCard.style.display = "";
+      renderHeadToHead(games, allPlayers, owner);
+    }
+  }
+
+  for (const btn of document.querySelectorAll(".view-btn")) {
+    btn.addEventListener("click", () => {
+      currentView = btn.dataset.view;
+      for (const b of document.querySelectorAll(".view-btn")) b.classList.toggle("active", b === btn);
+      renderAll();
+    });
   }
 
   fromInput.addEventListener("change", renderAll);
@@ -143,30 +190,28 @@ function renderStatCards(games, players) {
   }
 }
 
-function renderHeadToHead(games, players) {
+function renderHeadToHead(games, players, anchor) {
   const table = document.getElementById("h2hTable");
-  const rows = [];
-  for (let i = 0; i < players.length; i++) {
-    for (let j = i + 1; j < players.length; j++) {
-      const a = players[i];
-      const b = players[j];
-      const tally = { [a]: 0, [b]: 0, draw: 0 };
-      let total = 0;
-      for (const g of games) {
-        const inGame = [g.white.toLowerCase(), g.black.toLowerCase()];
-        if (!inGame.includes(a.toLowerCase()) || !inGame.includes(b.toLowerCase())) continue;
-        total++;
-        const outcomeA = outcomeFor(g, a);
-        if (outcomeA === "win") tally[a]++;
-        else if (outcomeA === "loss") tally[b]++;
-        else if (outcomeA === "draw") tally.draw++;
-      }
-      rows.push({ a, b, tally, total });
+  const others = players.filter((p) => p.toLowerCase() !== anchor.toLowerCase());
+  const rows = others.map((friend) => {
+    const a = anchor;
+    const b = friend;
+    const tally = { [a]: 0, [b]: 0, draw: 0 };
+    let total = 0;
+    for (const g of games) {
+      const inGame = [g.white.toLowerCase(), g.black.toLowerCase()];
+      if (!inGame.includes(a.toLowerCase()) || !inGame.includes(b.toLowerCase())) continue;
+      total++;
+      const outcomeA = outcomeFor(g, a);
+      if (outcomeA === "win") tally[a]++;
+      else if (outcomeA === "loss") tally[b]++;
+      else if (outcomeA === "draw") tally.draw++;
     }
-  }
+    return { a, b, tally, total };
+  });
 
   table.innerHTML = `
-    <tr><th>Enfrentamiento</th><th>Partidas</th><th>Victorias A</th><th>Tablas</th><th>Victorias B</th></tr>
+    <tr><th>Enfrentamiento</th><th>Partidas</th><th>Victorias tú</th><th>Tablas</th><th>Victorias amigo</th></tr>
     ${rows
       .map(
         (r) => `

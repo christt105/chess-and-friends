@@ -47,6 +47,17 @@
     padding: 6px 8px;
     font-size: 0.9rem;
   }
+  .view-switch { display: flex; gap: 8px; padding: 8px; }
+  .view-btn {
+    background: transparent;
+    color: #aaa;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .view-btn.active { background: #2a2e35; color: #e8e8e8; border-color: #555; }
   @media (max-width: 480px) {
     body { padding: 12px; }
   }
@@ -61,6 +72,11 @@
   <label>Hasta <input type="date" id="toDate" /></label>
 </div>
 
+<div class="card view-switch">
+  <button type="button" class="view-btn active" data-view="individual">Individual</button>
+  <button type="button" class="view-btn" data-view="friends">Amigos</button>
+</div>
+
 <div class="card">
   <h2 style="margin-top:0">Precisión a lo largo del tiempo</h2>
   <div class="chart-wrap"><canvas id="accuracyChart"></canvas></div>
@@ -68,7 +84,7 @@
 
 <div class="card stats-row" id="statCards"></div>
 
-<div class="card">
+<div class="card" id="h2hCard">
   <h2 style="margin-top:0">Cara a cara</h2>
   <div class="table-scroll"><table class="h2h" id="h2hTable"></table></div>
 </div>
