@@ -376,5 +376,19 @@
     "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Nimzowitsch-Defense-Kennedy-Linksspringer-Variation"
+  },
+  {
+    "id": "100e6e10-9dfa-11f1-a0b1-62165701000b",
+    "url": "https://www.chess.com/game/daily/1017418498",
+    "date": "2026-08-25T05:54:05.000Z",
+    "white": "esponjaseca",
+    "black": "christt105",
+    "whiteAccuracy": 90.48,
+    "blackAccuracy": 78.93,
+    "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
+    "timeClass": "daily",
+    "eco": "Queens-Pawn-Opening-Chigorin-Variation-2...Nf6-3.Nf3"
   }
 ]
