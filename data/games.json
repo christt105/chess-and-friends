@@ -390,5 +390,19 @@
     "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Queens-Pawn-Opening-Chigorin-Variation-2...Nf6-3.Nf3"
+  },
+  {
+    "id": "6ecd8334-a195-11f1-a7f5-b8705601000b",
+    "url": "https://www.chess.com/game/daily/1019849990",
+    "date": "2026-08-31T18:22:36.000Z",
+    "white": "christt105",
+    "black": "esponjaseca",
+    "whiteAccuracy": 72.91,
+    "blackAccuracy": 82.13,
+    "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
+    "timeClass": "daily",
+    "eco": "Scotch-Game-3...exd4-4.Nxd4"
   }
 ]
