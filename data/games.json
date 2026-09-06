@@ -404,5 +404,19 @@
     "blackResult": "win",
     "timeClass": "daily",
     "eco": "Scotch-Game-3...exd4-4.Nxd4"
+  },
+  {
+    "id": "5fc71f94-9bb9-11f1-aa0a-f9b1cd01000b",
+    "url": "https://www.chess.com/game/daily/1016033984",
+    "date": "2026-09-05T11:19:17.000Z",
+    "white": "Frankl65",
+    "black": "christt105",
+    "whiteAccuracy": 79.68,
+    "blackAccuracy": 69.63,
+    "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
+    "timeClass": "daily",
+    "eco": "English-Opening-Anglo-Indian-Queens-Knight-Variation-2...c6-3.e4-e5"
   }
 ]
