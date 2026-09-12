@@ -418,5 +418,19 @@
     "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "English-Opening-Anglo-Indian-Queens-Knight-Variation-2...c6-3.e4-e5"
+  },
+  {
+    "id": "e6eff0a4-a91f-11f1-81df-5887fd01000b",
+    "url": "https://www.chess.com/game/daily/1024574404",
+    "date": "2026-09-11T18:33:29.000Z",
+    "white": "Frankl65",
+    "black": "christt105",
+    "whiteAccuracy": 76.34,
+    "blackAccuracy": 60.48,
+    "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
+    "timeClass": "daily",
+    "eco": "Nimzowitsch-Larsen-Attack-Modern-Variation-2.Bb2-Nc6"
   }
 ]
