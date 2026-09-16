@@ -425,12 +425,26 @@
     "date": "2026-09-11T18:33:29.000Z",
     "white": "Frankl65",
     "black": "christt105",
-    "whiteAccuracy": 76.34,
-    "blackAccuracy": 60.48,
+    "whiteAccuracy": 82.68,
+    "blackAccuracy": 67.61,
     "result": "1-0",
     "whiteResult": "win",
     "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Nimzowitsch-Larsen-Attack-Modern-Variation-2.Bb2-Nc6"
+  },
+  {
+    "id": "2f555bb2-a7d2-11f1-ac36-4e39ed01000b",
+    "url": "https://www.chess.com/game/daily/1023824696",
+    "date": "2026-09-15T20:13:33.000Z",
+    "white": "esponjaseca",
+    "black": "christt105",
+    "whiteAccuracy": 82.36,
+    "blackAccuracy": 73.14,
+    "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "resigned",
+    "timeClass": "daily",
+    "eco": "Four-Knights-Game-Scotch-Variation"
   }
 ]
