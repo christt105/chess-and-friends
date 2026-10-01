@@ -446,5 +446,19 @@
     "blackResult": "resigned",
     "timeClass": "daily",
     "eco": "Four-Knights-Game-Scotch-Variation"
+  },
+  {
+    "id": "4d1104de-b142-11f1-8230-3252ad01000b",
+    "url": "https://www.chess.com/game/daily/1029750200",
+    "date": "2026-09-30T13:43:57.000Z",
+    "white": "christt105",
+    "black": "esponjaseca",
+    "whiteAccuracy": 72.2,
+    "blackAccuracy": 74.94,
+    "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
+    "timeClass": "daily",
+    "eco": "Scotch-Game-Classical-Intermezzo-Variation"
   }
 ]
