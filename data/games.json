@@ -460,5 +460,19 @@
     "blackResult": "win",
     "timeClass": "daily",
     "eco": "Scotch-Game-Classical-Intermezzo-Variation"
+  },
+  {
+    "id": "610ca84c-ae10-11f1-9cfc-0cc1bf01000b",
+    "url": "https://www.chess.com/game/daily/1027760398",
+    "date": "2026-10-08T19:14:23.000Z",
+    "white": "christt105",
+    "black": "Frankl65",
+    "whiteAccuracy": 69.58,
+    "blackAccuracy": 75.27,
+    "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
+    "timeClass": "daily",
+    "eco": "Indian-Game-2.Nc3-e6-3.e4"
   }
 ]
