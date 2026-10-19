@@ -474,5 +474,19 @@
     "blackResult": "win",
     "timeClass": "daily",
     "eco": "Indian-Game-2.Nc3-e6-3.e4"
+  },
+  {
+    "id": "f3490aa0-c4e2-11f1-b03a-c7f54101000b",
+    "url": "https://www.chess.com/game/daily/1042307854",
+    "date": "2026-10-18T13:54:08.000Z",
+    "white": "Frankl65",
+    "black": "christt105",
+    "whiteAccuracy": 80.05,
+    "blackAccuracy": 72.29,
+    "result": "1/2-1/2",
+    "whiteResult": "agreed",
+    "blackResult": "agreed",
+    "timeClass": "daily",
+    "eco": "Kings-Gambit-Declined-Classical-Variation-3.Nf3-d6-4.Nc3-Nc6"
   }
 ]
