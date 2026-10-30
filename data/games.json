@@ -488,5 +488,19 @@
     "blackResult": "agreed",
     "timeClass": "daily",
     "eco": "Kings-Gambit-Declined-Classical-Variation-3.Nf3-d6-4.Nc3-Nc6"
+  },
+  {
+    "id": "2adf2476-cc00-11f1-a571-ea86e701000b",
+    "url": "https://www.chess.com/game/daily/1047050110",
+    "date": "2026-10-29T20:15:42.000Z",
+    "white": "Frankl65",
+    "black": "christt105",
+    "whiteAccuracy": 91.94,
+    "blackAccuracy": 73.59,
+    "result": "1-0",
+    "whiteResult": "win",
+    "blackResult": "checkmated",
+    "timeClass": "daily",
+    "eco": "English-Opening-Kings-English-Variation-2.e3"
   }
 ]
