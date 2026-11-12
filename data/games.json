@@ -502,5 +502,19 @@
     "blackResult": "checkmated",
     "timeClass": "daily",
     "eco": "English-Opening-Kings-English-Variation-2.e3"
+  },
+  {
+    "id": "d49e54f8-be92-11f1-a832-48646001000b",
+    "url": "https://www.chess.com/game/daily/1038246782",
+    "date": "2026-11-11T23:38:11.000Z",
+    "white": "esponjaseca",
+    "black": "christt105",
+    "whiteAccuracy": null,
+    "blackAccuracy": null,
+    "result": "0-1",
+    "whiteResult": "timeout",
+    "blackResult": "win",
+    "timeClass": "daily",
+    "eco": "Ruy-Lopez-Opening-Morphy-Defense-Exchange-Lutikov-Variation"
   }
 ]
