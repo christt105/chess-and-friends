@@ -516,5 +516,19 @@
     "blackResult": "win",
     "timeClass": "daily",
     "eco": "Ruy-Lopez-Opening-Morphy-Defense-Exchange-Lutikov-Variation"
+  },
+  {
+    "id": "efc56abc-d4a6-11f1-8fbb-45cb0601000b",
+    "url": "https://www.chess.com/game/daily/1053782988",
+    "date": "2026-11-13T18:32:16.000Z",
+    "white": "Frankl65",
+    "black": "christt105",
+    "whiteAccuracy": 49.25,
+    "blackAccuracy": 61.09,
+    "result": "0-1",
+    "whiteResult": "resigned",
+    "blackResult": "win",
+    "timeClass": "daily",
+    "eco": "Italian-Game-Two-Knights-Modern-Bishops-Opening-4...d5-5.exd5-Nxd5-6.O-O"
   }
 ]
